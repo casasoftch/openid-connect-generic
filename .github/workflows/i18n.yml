@@ -26,7 +26,7 @@ jobs:
 
     - name: Setup Node Environment
       # https://github.com/marketplace/actions/setup-node-js-environment
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v4
       with:
         node-version-file: '.nvmrc'
         cache: ${{ !env.ACT && 'npm' || '' }}
